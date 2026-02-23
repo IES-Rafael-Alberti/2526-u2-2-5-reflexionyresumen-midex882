@@ -184,7 +184,7 @@ Organiza simulaciones de ataque para poner a prueba al SOC y detectar puntos dé
 * Sistemas de ticketing (TheHive, ServiceNow, Jira, etc.):  
   * Registro de incidentes, seguimiento, asignación de tareas y tiempos.​  
 * Herramientas OSINT (VirusTotal, OTX, etc. y fuentes públicas):  
-  * Lookups de IoCs, enriquecimiento de eventos, contexto sobre amenazas.​  
+  * Contexto sobre amenazas y atacantes, información sobre vulnerabilidades propias.​  
 * Herramientas forenses (Autopsy, Volatility, etc.):  
   * Adquisición y análisis de evidencias tras un incidente.​
 
@@ -192,9 +192,9 @@ Organiza simulaciones de ataque para poner a prueba al SOC y detectar puntos dé
 
 * Correlación de eventos en SIEM (reglas, casos de uso: fuerza bruta, beaconing, escalado de privilegios).​  
 * Clasificación por taxonomía basada en guías de INCIBE/CCN‑CERT/ENISA.​  
-* Matriz peligrosidad‑impacto para asignar prioridad.​  
-* Threat Hunting guiado por hipótesis y TI (búsquedas sobre patrones sospechosos).​  
-* Uso estructurado de OSINT para enriquecer IoCs sin filtrar información sensible.​
+* Matriz peligrosidad‑impacto para asignar prioridad a los incidentes, aplicado en un SOC.​  
+* Threat Hunting.​  
+* Uso estructurado de OSINT para ganar ventaja viendo potenciales debilidades desde fuera.​
 
 ### 2.5) Buenas prácticas y errores típicos
 
@@ -212,9 +212,9 @@ Organiza simulaciones de ataque para poner a prueba al SOC y detectar puntos dé
 
 * Clasificar incidentes sin usar la taxonomía, lo que rompe la comparabilidad y dificulta la comunicación y el organizar acciones.​  
 * Confundir peligrosidad alta con impacto alto y al revés (por ejemplo, incidente crítico bien contenido).​  
-* Configurar un SIEM que lo alerta “todo” y genera fatiga en el equipo.​  
+* Configurar un SIEM que lo alerta todo, sea peligroso o no, y que genera fatiga en el equipo.​  
 * Depender solo del SIEM y olvidarme de procesos, personas y servicios como Threat Hunting o Forensics.​  
-* No documentar bien el incidente y luego no poder justificar decisiones ante auditoría o dirección.​  
+* No documentar bien el incidente y luego no poder justificar tus decisiones ante auditoría o dirección.​  
 * Escribir informes técnicos como “muros de texto” poco estructurados que nadie lee ni utiliza.​
 
 ### 2.6) Glosario mínimo (términos y definiciones cortas)
